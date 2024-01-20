@@ -9,4 +9,6 @@ jobs:
   assign:
     runs-on: ubuntu-latest
     steps:
-      - uses: gustavofreze/auto-assign@1.0.0
+      - uses: itsOliverBott/assign-pr-author-as-assignee@release
+        with:
+          token: ${{ github.token }}
