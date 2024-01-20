@@ -13,3 +13,5 @@ jobs:
         with:
           assignees: ${{ github.actor }}
           reviewers: mia-developer
+          github-token: ${{ github.token }}
+
