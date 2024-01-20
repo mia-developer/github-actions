@@ -9,9 +9,6 @@ jobs:
   assign:
     runs-on: ubuntu-latest
     steps:
-      - uses: hamkiti/review-assign-action@v1.3.3
+      - uses: gustavofreze/auto-assign@1.0.0
         with:
-          assignees: ${{ github.actor }}
-          reviewers: mia-developer
-          github-token: ${{ github.token }}
-
+          allow_self_assign: true
