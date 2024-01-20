@@ -12,4 +12,4 @@ jobs:
       - uses: hamkiti/review-assign-action@v1.3.3
         with:
           assignees: ${{ github.actor }}
-          reviewers: mia-developer
+          reviewers: yaini
