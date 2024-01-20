@@ -9,7 +9,7 @@ jobs:
   assign:
     runs-on: ubuntu-latest
     steps:
-      - uses: hamkiti/review-assign-action@v1.3.3
+      - uses: hamkiti/review-assign-action@v1.3.0
         with:
           assignees: ${{ github.actor }}
           reviewers: yaini, mia-developer
