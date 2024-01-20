@@ -1,0 +1,15 @@
+name: Default Pull Request Setting
+
+on:
+  pull_request:
+    branches:
+      main
+
+jobs:
+  assign:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: hamkiti/review-assign-action@v1.3.3
+        with:
+          assignees: ${{ github.actor }}
+          reviewers: @mia-developer
