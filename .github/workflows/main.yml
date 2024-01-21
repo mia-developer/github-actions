@@ -1,0 +1,14 @@
+name: Default Pull Request Setting
+
+on:
+  pull_request:
+    branches:
+      main
+
+jobs:
+  assign:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: hkusu/review-assign-action@v1.3.0
+        with:
+          assignees: ${{ github.actor }}
